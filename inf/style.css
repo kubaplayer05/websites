@@ -1,0 +1,273 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-image: url(https://nanoni.at/wp-content/uploads/2016/05/IT-nanoni-Korab-Thaci-1.jpg);
+	width: 100%;
+	color: white;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	display: flex;
+	padding: 1.5rem 1.5rem 2rem 1.5rem;
+	background-color: black;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a h1 {
+	color: tomato;
+}
+
+.logo {
+	width: 20vw;
+	font-size: 2.5rem;
+	color: tomato;
+}
+
+.nav-options {
+	display: flex;
+	justify-content: flex-start;
+	width: 80vw;
+	height: 100%;
+}
+
+.nav-options a:hover {
+	color: tomato;
+}
+
+.nav-text {
+	padding-left: 2rem;
+	padding-right: 5rem;
+	font-size: 2rem;
+}
+
+.entry {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 7rem;
+	font-size: 1.8rem;
+	/* background-color: #0072B5; */
+	/* background-image: url(https://nanoni.at/wp-content/uploads/2016/05/IT-nanoni-Korab-Thaci-1.jpg); */
+	min-height: 40vh;
+}
+
+.entry h2 {
+	margin-bottom: 3rem;
+	font-size: 4rem;
+}
+
+.entry-text {
+	margin-bottom: 3rem;
+}
+
+.list-div {
+	width: 50vw;
+}
+
+.entry-list {
+	text-align: center;
+}
+
+.entry-list li {
+	margin-top: 2rem;
+	padding-left: 1.5rem;
+}
+
+.services {
+	padding: 3rem;
+	background-color: #efe1ce;
+	text-align: center;
+	color: #363945;
+	font-size: 1.8rem;
+}
+
+.services h2 {
+	padding-bottom: 4rem;
+	font-size: 4rem;
+}
+
+.services-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	min-height: 40vh;
+}
+
+.cards {
+	max-width: 25vw;
+	min-height: 25vh;
+	background-color: white;
+	border: 6px solid #1c6ea4;
+	text-align: center;
+	padding-top: 0.5rem;
+	justify-self: center;
+	margin-bottom: 2.5rem;
+	padding-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards h3 {
+	padding-top: 1.5rem;
+	flex: 1;
+}
+
+.cards-text {
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-top: 1rem;
+	flex: 3;
+	align-self: center;
+}
+
+.cards-button {
+	background-color: #fdac53;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	font-size: 2rem;
+	color: white;
+	margin-top: 2rem;
+	border-radius: 4rem;
+	box-shadow: none;
+	text-decoration: none;
+}
+
+.newsletter {
+	/* background-color: #0072B5; */
+	background-image: url(https://nanoni.at/wp-content/uploads/2016/05/IT-nanoni-Korab-Thaci-1.jpg);
+	min-height: 40vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 6rem;
+	padding: 7rem;
+}
+
+.newsletter-head {
+	font-size: 4rem;
+	padding-top: 4rem;
+}
+
+.newsletter-form {
+	min-width: 50vw;
+	margin-top: 5rem;
+	padding: 3rem;
+	background-color: white;
+	color: #363945;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.5rem;
+	border-radius: 3rem;
+	text-align: center;
+}
+
+.form-label {
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.form-input {
+	background-color: #b5b7b9;
+	color: white;
+	border-radius: 2rem;
+	padding: 0.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.submit-button {
+	background-color: #fdac53;
+	/* padding: 0.5rem 1.5rem 0.5rem 1.5rem;  */
+	padding: 0.5rem 0 0.5rem 0;
+	font-size: 2rem;
+	color: white;
+	margin-top: 2rem;
+	border-radius: 4rem;
+	box-shadow: none;
+	text-decoration: none;
+	width: 7rem;
+	align-self: center;
+}
+
+.footer {
+	background-color: #363945;
+	min-height: 10vh;
+	font-size: 1.8rem;
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact {
+	text-align: center;
+}
+
+.info {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 798px) {
+	nav {
+		position: relative;
+		justify-content: center;
+	}
+
+	.nav-options {
+		display: none;
+	}
+	.logo {
+		text-align: center;
+		width: auto;
+	}
+
+	.services-grid-container {
+		grid-template-columns: 1fr;
+	}
+
+	.cards {
+		max-width: 60vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	
+	.cards-button {
+		width: 80px;
+		align-self: center;
+	}
+
+	.newsletter-head {
+		text-align: center;
+	}
+
+	.footer {
+		flex-direction: column;
+		align-items: center;
+	}
+}
