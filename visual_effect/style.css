@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+.section1 {
+	height: 100vh;
+	background-color: #222;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 4.6rem;
+}
+
+.section2 {
+	height: 100vh;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	margin: 0 10%;
+}
+
+.intro-text {
+	font-size: 2rem;
+	margin-right: 5%;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.5s all ease-in-out;
+}
+
+.intro-appear {
+     opacity: 1;
+     transform: translateY(0px);
+}
+
+img {
+	width: 40vw;
+	height: auto;
+}

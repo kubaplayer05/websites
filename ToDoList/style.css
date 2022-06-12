@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: green;
+}
+
+h1 {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.container {
+	width: 80%;
+	height: 100vh;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.app {
+	background-color: orange;
+	padding: 4rem;
+	border-radius: 15px;
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.bottom {
+	margin-top: 2rem;
+	font-size: 1.6rem;
+}
+
+.task {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 0;
+	color: black;
+}
+
+.error {
+	color: darkred;
+	text-align: center;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+}
+
+.done {
+	color: greenyellow;
+}
+
+.edit-window {
+	margin-top: 4rem;
+	width: 600px;
+	height: 100px;
+	border-radius: 15px;
+	background-color: tomato;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    display: none;
+}
+
+.i-edit {
+	width: 80%;
+	margin-right: 1rem;
+}

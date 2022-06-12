@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="top">
+            <h1 class="title">Expense Tracker</h1>
+            <p class="desc">Add a new item:</p>
+            <div class="options">
+                <div class="option">
+                    <span class="text">Name:</span>
+                    <input type="text" class="i-text">
+                </div>
+                <div class="option">
+                    <span>Date:</span>
+                    <input type="date" class="i-date">
+                </div>
+                <div class="option">
+                    <span>Amount:</span>
+                    <input type="number" class="i-number">
+                </div>
+
+            </div>
+            <p class="warning">You must complete all the data!</p>
+            <button class="accept">Accept</button>
+        </div>
+        <div class="bottom">
+            <table class="table">
+                <tr>
+                    <td class="table-desc">Name</td>
+                    <td class="table-desc">Date</td>
+                    <td class="table-desc">Amount</td>
+                    <td class="table-desc"></td>
+                </tr>
+                <tr class="tr-def">
+                    <td class="td-def">No expenses</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

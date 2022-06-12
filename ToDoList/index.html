@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="top">
+                <h1>Task list</h1>
+                <input type="text" placeholder="text here!" class="i-send">
+                <button class="send">send</button>
+                <p class="error"></p>
+            </div>
+            <div class="bottom">
+                <div class="task">
+                    <p class="task-desc">make sandwich</p>
+                    <div class="options">
+                        <input type="checkbox" class="checkbox">
+                        <button class="edit">edit</button>
+                        <button class="delete">delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit-window">
+            <input type="text" class="i-edit">
+            <button class="accept-edit">accept</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
