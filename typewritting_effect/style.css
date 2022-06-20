@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	overflow: auto;
+}
+
+.intro {
+	display: flex;
+	color: white;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(https://cdn.pixabay.com/photo/2017/06/21/14/32/jellyfish-2427426_960_720.jpg);
+	background-size: cover;
+}
+
+h1 {
+    margin-left: 5vw;
+    margin-top: 25vh;
+}
+
+.typing {
+    position: relative;
+    margin-left: 10px;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 5%;
+    right: -5px;
+    border-right: 2px solid #fff;
+    animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
