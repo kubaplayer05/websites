@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: #333;
+	color: #fff;
+}
+
+.container {
+	height: 100vh;
+	margin: 0 10%;
+	display: flex;
+	flex-direction: column;
+}
+
+.score {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+}
+
+.score-div {
+	width: 100%;
+	min-height: 30%;
+	color: #fff;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.score-text {
+	font-weight: 500;
+}
+
+.score-div:hover {
+	background-color: #666;
+}
+
+.up {
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.result-display {
+	width: 60%;
+	background: none;
+	border: none;
+	border-bottom: solid 2px rgb(31, 2, 221);
+	color: #fff;
+	text-align: right;
+	font-size: 1.8rem;
+}
+
+.down {
+	width: 100%;
+	height: 70vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.buttons {
+	width: 75px;
+	height: 75px;
+	font-size: 1.8rem;
+	margin: auto;
+	border-radius: 50%;
+	font-weight: 700;
+	cursor: pointer;
+	border: solid 1px #fff;
+}
+
+.numbers {
+	background-color: rgb(212, 104, 16);
+	color: #222;
+}
+
+.math-signs {
+	background-color: #001;
+	color: #fff;
+}
+
+.error {
+	color: rgb(193, 6, 21);
+	font-size: 1.8rem;
+	margin-top: 15px;
+	opacity: 0;
+	cursor: default;
+}
+
+/* buttons order */
+
+#zero {
+	order: 4;
+}
+
+#one {
+	order: 1;
+}
+
+#two {
+	order: 2;
+}
+
+#three {
+	order: 3;
+}
+
+#four {
+	order: 6;
+}
+
+#five {
+	order: 7;
+}
+
+#six {
+	order: 8;
+}
+
+#seven {
+	order: 11;
+}
+
+#eight {
+	order: 12;
+}
+
+#nine {
+	order: 13;
+}
+
+#plus {
+	order: 5;
+}
+
+#minus {
+	order: 9;
+}
+
+#multiply {
+	order: 10;
+}
+
+#divide {
+	order: 14;
+}
+
+#equal {
+	order: 15;
+}
+
+@media only screen and (max-width: 758px) {
+	.down {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#zero {
+		order: 10;
+	}
+
+	#one {
+		order: 1;
+	}
+
+	#two {
+		order: 2;
+	}
+
+	#three {
+		order: 3;
+	}
+
+	#four {
+		order: 4;
+	}
+
+	#five {
+		order: 5;
+	}
+
+	#six {
+		order: 6;
+	}
+
+	#seven {
+		order: 7;
+	}
+
+	#eight {
+		order: 8;
+	}
+
+	#nine {
+		order: 9;
+	}
+
+	#plus {
+		order: 11;
+	}
+
+	#minus {
+		order: 12;
+	}
+
+	#multiply {
+		order: 13;
+	}
+
+	#divide {
+		order: 14;
+	}
+
+	#equal {
+		order: 15;
+	}
+}

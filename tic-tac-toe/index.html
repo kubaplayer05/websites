@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tic-tac-toe</title>
+    <title>Tic-Tac-Toe game</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
     <div class="container">
-        <div class="square">
-            <div class="pitch" id="1"></div>
-            <div class="pitch" id="2"></div>
-            <div class="pitch" id="3"></div>
-            <div class="pitch" id="4"></div>
-            <div class="pitch" id="5"></div>
-            <div class="pitch" id="6"></div>
-            <div class="pitch" id="7"></div>
-            <div class="pitch" id="8"></div>
-            <div class="pitch" id="9"></div>
+        <div class="turn-div">
+            <p class="turn-text">Turn: </p>
+            <img src="./svg/x.svg" class="turn-icon icon">
         </div>
 
-        <div class="menu">
-
-
-
+        <div class="game-area">
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
+            <div data-score="" class="square"></div>
         </div>
+
+        <div class="score">
+            <p class="x-counter">X wins: 0</p>
+            <p class="score-text"></p>
+            <p class="circle-counter">O wins: 0</p>
+        </div>
+
+        <button class="restart">restart</button>
 
     </div>
 
     <script src="./script.js"></script>
-
 </body>
 
 </html>
-
-
-            <!-- <div class="turn">
-                <p>Turn:</p>
-                <span class="x">X</span>
-                <span class="o">O</span>
-            </div>
-
-            <div class="score">
-                <span class="score-players">X:</span>
-                <span class="score-players">O:</span>
-            </div> -->
